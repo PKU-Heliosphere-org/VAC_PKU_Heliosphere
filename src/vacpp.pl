@@ -319,7 +319,7 @@ sub shiftopt{
         $indent=$`;
         $_='';
 	die "Missing SHIFT BEGIN before $.\n" if $shiftregion eq '';
-	die "Missing SHIFT before $.\n" unless defined(%shift0);
+	die "Missing SHIFT before $.\n" unless %shift0;
 	$shiftcount++;
         # Produce the Perl match string and the Fortran IF condition string
 	@shifted=keys(%shift0);
