@@ -1,4 +1,4 @@
-#!/usr/bin/perl -si
+#!/usr/bin/perl -s
 if(!($d||$g||$on||$off||$s||$p||length($phi)||$u||length($z))){
    print STDERR <<HELPMSG ;
 
@@ -27,6 +27,8 @@ setvac -s
 HELPMSG
 exit}
 
+# Allow in-place editing without creating backup files
+$^I = "";
 
 $showonly= $s && !($d||$g||$on||$off||$p||$u||length($phi)||length($z));
 
