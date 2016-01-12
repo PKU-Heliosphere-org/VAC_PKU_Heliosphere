@@ -363,18 +363,24 @@ read(unitpar,*)rounded,squared
 dist1(ix^S)=max(^D&abs((x(ix^S,^D)-xcent^D)/(x(ixmax^DD,^D)-xcent^D)))
 dist2(ix^S)=sqrt(^D&((x(ix^S,^D)-xcent^D)/(x(ixmax^DD,^D)-xcent^D))**2+)
 
-! The weight increases from 0 to 1 for distance between 0 and rounded, and
-! it drops back to 0 in the distance range rounded and squared. 
-where(dist1(ix^S)<rounded)
-   weight(ix^S)=dist1(ix^S)/rounded
-elsewhere
-   weight(ix^S)=(squared-dist1(ix^S))/(squared-rounded)
-endwhere
+if(squared < rounded)then
+   ! The weight increases from 0 to 1 in the distance range squared to rounded.
+   weight(ix^S)=(dist1(ix^S)-squared)/(rounded-squared)
+else
+   ! The weight increases from 0 to 1 for distance between 0 and rounded, and
+   ! it drops back to 0 in the distance range rounded and squared. 
+   where(dist1(ix^S) < rounded)
+      weight(ix^S)=dist1(ix^S)/rounded
+   elsewhere
+      weight(ix^S)=(squared-dist1(ix^S))/(squared-rounded)
+   endwhere
+endif
+
+! Limit weight to the 0 to 1 range
 weight(ix^S)=min(one,max(zero,weight(ix^S)))
 
 ! Shrink all coordinates by the factor 1 + weight*(dist1/dist2 - 1)
 ! Where weight is 0 there is no distortion, where weight is 1 the grid is round
-
 weight(ix^S)=one + weight(ix^S)*(dist1(ix^S)/dist2(ix^S) - one)
 
 ^D&x(ix^S,^D)=weight(ix^S)*(x(ix^S,^D)-xcent^D)+xcent^D;
