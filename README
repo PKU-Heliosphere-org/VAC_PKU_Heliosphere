@@ -56,9 +56,9 @@ perl -i Fix/PERL
 
 weblink.pl &
 
-   or directly with a web browser like "netscape" or "mozilla":
+   or directly with a web browser by opening
 
-netscape Man/Contents.html
+Man/Contents.html
 
    You can print out the manual pages from the browser file by file,
    or print Man/MANUAL.ps.gz directly which was produced according
@@ -67,12 +67,6 @@ netscape Man/Contents.html
 
 cd Man
 make print
-
-   If you have no web browser, you may read the manuals in an ASCII format by
-
-cd Man
-ASCII Contents.html | more
-ASCII idl.html      | lpr
 
 ------------------------------------------------------------------------------
 
