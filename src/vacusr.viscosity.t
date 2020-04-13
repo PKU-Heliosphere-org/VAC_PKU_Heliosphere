@@ -79,14 +79,14 @@ enddo; enddo;
 if(typeaxial=='cylinder'.and. phi_ >1)then
    if(gencoord)then
       lambda(ix^S,phi_,r_)=lambda(ix^S,phi_,r_)  &
-            - w(ix^S,phi_)/w(ix^S,rho_)/x(ix^S,r_)
+            - w(ix^S,mphi_)/w(ix^S,rho_)/x(ix^S,r_)
       lambda(ix^S,phi_,phi_)=lambda(ix^S,phi_,phi_)  &
-            + two*w(ix^S,r_)/w(ix^S,rho_)/x(ix^S,r_)
+            + two*w(ix^S,mr_)/w(ix^S,rho_)/x(ix^S,r_)
    else
      forall(ix= ix^LIM1:)lambda(ix,ix^SE,phi_,r_)=lambda(ix,ix^SE,phi_,r_) &
-                  -w(ix,ix^SE,phi_)/w(ix,ix^SE,rho_)*areaside(ix)
+                  -w(ix,ix^SE,mphi_)/w(ix,ix^SE,rho_)*areaside(ix)
      forall(ix= ix^LIM1:)lambda(ix,ix^SE,phi_,phi_)=lambda(ix,ix^SE,phi_,phi_)&
-                  +two*w(ix,ix^SE,r_)/w(ix,ix^SE,rho_)*areaside(ix)
+                  +two*w(ix,ix^SE,mr_)/w(ix,ix^SE,rho_)*areaside(ix)
    endif
    lambda(ix^S,r_,phi_)=lambda(ix^S,phi_,r_)  
 endif
