@@ -1,4 +1,4 @@
-#!/usr/bin/perl -n
+#!/usr/local/bin/perl -n
 # Splits subroutines and functions in VAC Fortran 90 files into separate files 
 # named "vac_SUBROUTINEORFUNCTONNAME.f" and generates a list of object files 
 # into the file "OBJECTS" which can be used in a Makefile. 

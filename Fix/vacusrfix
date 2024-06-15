@@ -1,4 +1,4 @@
-#!/usr/bin/perl -pi~
+#!/usr/local/bin/perl -pi~
 # Convert old style vacusr files to new format:
 #
 #    Replace "^INCLUDE filename" with "INCLUDE:filename".

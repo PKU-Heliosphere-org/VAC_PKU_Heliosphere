@@ -1,4 +1,4 @@
-#!/usr/bin/perl -s
+#!/usr/local/bin/perl -s
 # Translate FORALL statements to DO loops. The translated lines in the DO 
 # loop will be kept shorter than the value of the maxlen parameter, 
 # but other lines are not checked.

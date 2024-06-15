@@ -1,4 +1,4 @@
-#!/usr/bin/perl -s
+#!/usr/local/bin/perl -s
 #############################################################################
 #
 # VAC PreProcessor (Copyleft) Gabor Toth 1994 

@@ -1,4 +1,4 @@
-#!/usr/bin/perl -s
+#!/usr/local/bin/perl -s
 
 my $Help        = $h or $H or $help;
 my $Debug       = $D;

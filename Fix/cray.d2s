@@ -1,4 +1,4 @@
-#!/usr/bin/perl -pi~
+#!/usr/local/bin/perl -pi~
 # Replace double precision BLAS and LAPACK with single precision versions
 # by changing the initial D into an S for Cray blas and lapack routines.
 #

@@ -1,4 +1,4 @@
-#!/usr/bin/perl
+#!/usr/local/bin/perl
 
 # Usage: html2latex HTMLFILE > TEXFILE
 

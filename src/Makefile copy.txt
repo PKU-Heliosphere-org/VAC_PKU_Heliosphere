@@ -45,16 +45,14 @@ F90FLG=-free
 #
 # Select one:
 #
-#a F77FLAGS= $(F77FLG) -O4 -w=all #        final compile
-F77FLAGS= $(F77FLG) -O4 -Wall #        final compile
+F77FLAGS= $(F77FLG) -O4 -w=all #        final compile
 #F77FLAGS= $(F77FLG) -O1 -C -w=all #    developing
 #F77FLAGS= $(F77FLG) -g -C #            debugging
 
 #
 # Select one:
 #
-#a F90FLAGS= $(F90FLG) -O4 -w=all #        optimized
-F90FLAGS= $(F90FLG) -O4 -Wall #        optimized
+F90FLAGS= $(F90FLG) -O4 -w=all #        optimized
 #F90FLAGS= $(F90FLG) -O1 -C -w=all #    develop
 #F90FLAGS= $(F90FLG) -O0 -gline -C #            debugging
 
@@ -371,7 +369,7 @@ VACPP_=vacpp.pl
 
 # ... select one for the compilation rules:
 #
-VACPP =./vacpp.pl #			
+VACPP =vacpp.pl #			
 #VACPP =vacpp.pl -O #			Optimized shifts (always used by HPF)
 #VACPP =vacpp.pl -maxlen=72 #		Reduced maximum line length
 #VACPP =vacpp.pl -O -maxlen=72 #	Optimization and reduction 

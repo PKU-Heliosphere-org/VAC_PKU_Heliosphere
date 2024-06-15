@@ -1,4 +1,4 @@
-#!/usr/bin/perl
+#!/usr/local/bin/perl
 # Find all string valued cases in the .t source files to help user
 # -------------------------------------------------------------------------
 @ARGV=split(' ',`ls vac*.t`);

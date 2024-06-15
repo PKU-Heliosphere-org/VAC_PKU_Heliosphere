@@ -1,4 +1,4 @@
-#!/usr/bin/perl
+#!/usr/local/bin/perl
 #
 # Run this file to get an ASCII version of the HTML manual files, e.g.:
 #

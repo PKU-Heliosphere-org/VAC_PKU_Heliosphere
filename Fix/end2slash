@@ -1,4 +1,4 @@
-#!/usr/bin/perl -pi~
+#!/usr/local/bin/perl -pi~
 # Convert &end to / in namelists. Usage: Fix/end2slash par/*
 
 s#&end#/#

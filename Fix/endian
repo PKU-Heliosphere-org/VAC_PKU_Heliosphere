@@ -1,4 +1,4 @@
-#!/usr/bin/perl -s
+#!/usr/local/bin/perl -s
 # Convert or test the endianness of a VAC binary/real*4 data file
 # Also convert from Cray format (8 byte integer)
 

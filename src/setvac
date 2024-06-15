@@ -1,4 +1,4 @@
-#!/usr/bin/perl -s
+#!/usr/local/bin/perl -s
 if(!($d||$g||$on||$off||$s||$p||length($phi)||$u||length($z))){
    print STDERR <<HELPMSG ;
 

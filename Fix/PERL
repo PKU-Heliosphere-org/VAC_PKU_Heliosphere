@@ -1,4 +1,4 @@
-#!/usr/bin/perl -i
+#!/usr/local/bin/perl -i
 # This perl script replaces the first #!....perl lines 
 # in each Perl script with the proper path to perl.
 #

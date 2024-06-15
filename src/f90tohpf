@@ -1,4 +1,4 @@
-#!/usr/bin/perl -s
+#!/usr/local/bin/perl -s
 # Insert HPF directives
 #
 # Usage: f90tohpf [-distr=[1][2][3]] [-distrstatic] [-pghpf] F90FILE > HPFFILE

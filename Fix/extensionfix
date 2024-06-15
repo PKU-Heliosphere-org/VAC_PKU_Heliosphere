@@ -1,4 +1,4 @@
-#!/usr/bin/perl -si~
+#!/usr/local/bin/perl -si~
 # Replace file extensions in scripts.
 #
 # Usage: "make extensions" or "make extension77" via the Makefile.

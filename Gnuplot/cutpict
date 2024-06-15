@@ -1,4 +1,4 @@
-#!/usr/bin/perl -s
+#!/usr/local/bin/perl -s
 #
 # Cuts out the lines containing the NPICT-th picture from a VAC style 
 # ASCII data file. The header information is displayed on STDERR. 

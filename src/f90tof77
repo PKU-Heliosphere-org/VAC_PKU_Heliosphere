@@ -1,4 +1,4 @@
-#!/usr/bin/perl -s
+#!/usr/local/bin/perl -s
 ###############################################################################
 # The f90tof77 script translates the following F90 syntax to F77:
 #
